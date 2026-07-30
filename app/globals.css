@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #F5EFE3;
+  --color-card: #FBF6EC;
+  --color-ink: #3A2E1F;
+  --color-card-border: rgba(58, 46, 31, 0.25);
+  --color-ink-muted: rgba(58, 46, 31, 0.6);
+  --color-ink-faint: rgba(58, 46, 31, 0.4);
+}
+
+/* 深色模式：跟随系统偏好 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1A1612;
+    --color-card: #241F18;
+    --color-ink: #F5EFE3;
+    --color-card-border: rgba(245, 239, 227, 0.15);
+    --color-ink-muted: rgba(245, 239, 227, 0.6);
+    --color-ink-faint: rgba(245, 239, 227, 0.4);
+  }
+}
+
+html,
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+/* 手写感字体加载（CDN） */
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+
+body {
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(224, 122, 62, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 100% 100%, rgba(45, 90, 74, 0.05) 0%, transparent 40%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.4 0 0 0 0 0.3 0 0 0 0 0.2 0 0 0 0.03 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* 手写感字体类 */
+.font-hand {
+  font-family: 'LXGW WenKai', '霞鹜文楷', 'Noto Serif SC', serif;
+}
+
+/* 复古明信片虚线边框 */
+.postcard-border {
+  border: 1.5px dashed rgba(58, 46, 31, 0.25);
+}
+
+/* 邮戳圆形徽章 */
+.stamp-badge {
+  border: 2px solid currentColor;
+  border-radius: 9999px;
+  padding: 4px 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  transform: rotate(-8deg);
+  display: inline-block;
+  font-size: 11px;
+}
+
+/* 卡片基础样式 */
+.paper-card {
+  background-color: var(--color-card);
+  border-radius: 12px;
+  box-shadow:
+    0 2px 8px rgba(58, 46, 31, 0.08),
+    0 1px 2px rgba(58, 46, 31, 0.04);
+}
+
+/* 触控热区 ≥44px */
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* 隐藏滚动条 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 数字键盘按钮 */
+.num-key {
+  background-color: var(--color-card);
+  border: 1px solid rgba(58, 46, 31, 0.1);
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 500;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.num-key:active {
+  background-color: rgba(224, 122, 62, 0.15);
+  transform: scale(0.96);
+}
+
+/* 全局按钮 */
+.btn-primary {
+  background-color: #E07A3E;
+  color: #FFFFFF;
+  border-radius: 24px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+.btn-primary:active {
+  transform: scale(0.98);
+  background-color: #C56530;
+}
+.btn-primary:disabled {
+  background-color: rgba(224, 122, 62, 0.4);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: #3A2E1F;
+  border-radius: 24px;
+  padding: 10px 20px;
+  border: 1.5px solid rgba(58, 46, 31, 0.2);
+  min-height: 44px;
+}
+.btn-ghost:active {
+  background-color: rgba(58, 46, 31, 0.05);
+}
+
+/* 原生日期/时间选择器主题适配（与明信片主题一致） */
+input[type="date"],
+input[type="time"] {
+  color-scheme: light;
+  font-family: inherit;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(33%) sepia(35%) saturate(646%) hue-rotate(355deg) brightness(95%) contrast(88%);
+  cursor: pointer;
+  opacity: 0.7;
+}
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+input[type="time"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+/* 深色系统弹出的日期/时间选择器遮罩，让指示图标在浅色主题下可见 */
+input[type="date"],
+input[type="time"] {
+  background-color: var(--color-card);
+  color: var(--color-ink);
+}
+
+/* 深色模式自动跟随系统偏好 */
+@media (prefers-color-scheme: dark) {
+  input[type="date"],
+  input[type="time"] {
+    color-scheme: dark;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(80%) sepia(25%) saturate(646%) hue-rotate(355deg) brightness(95%) contrast(88%);
+  }
+  body {
+    background-image:
+      radial-gradient(circle at 0% 0%, rgba(224, 122, 62, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 100% 100%, rgba(45, 90, 74, 0.08) 0%, transparent 40%);
+  }
+}

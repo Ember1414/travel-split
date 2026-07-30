@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#F5EFE3"/>
+  <rect x="96" y="80" width="320" height="352" rx="24" fill="#FBF6EC" stroke="#3A2E1F" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="256" cy="160" r="44" fill="#E07A3E"/>
+  <text x="256" y="176" font-family="serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#FFFFFF">¥</text>
+  <rect x="136" y="232" width="240" height="12" rx="6" fill="#3A2E1F" opacity="0.3"/>
+  <rect x="136" y="260" width="180" height="10" rx="5" fill="#3A2E1F" opacity="0.2"/>
+  <rect x="136" y="284" width="200" height="10" rx="5" fill="#3A2E1F" opacity="0.2"/>
+  <circle cx="376" cy="376" r="40" fill="none" stroke="#C8442C" stroke-width="4" stroke-dasharray="6 4"/>
+  <text x="376" y="384" font-family="serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#C8442C" transform="rotate(-12 376 376)">已结</text>
+</svg>
