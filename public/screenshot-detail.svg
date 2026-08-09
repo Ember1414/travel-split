@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5EFE3"/>
+      <stop offset="100%" stop-color="#EBE0C8"/>
+    </linearGradient>
+  </defs>
+  <rect width="390" height="844" fill="url(#bg)"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="390" height="60" fill="#FBF6EC" opacity="0.95"/>
+  <text x="20" y="38" font-family="sans-serif" font-size="18" fill="#3A2E1F">‹</text>
+  <text x="195" y="38" font-family="serif" font-size="18" fill="#3A2E1F" text-anchor="middle" font-weight="bold">海南五日游</text>
+  <!-- Summary Card -->
+  <rect x="20" y="75" width="350" height="80" rx="12" fill="#FBF6EC" stroke="#3A2E1F" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="40" y="105" font-family="sans-serif" font-size="11" fill="#3A2E1F" opacity="0.5">总消费</text>
+  <text x="40" y="135" font-family="serif" font-size="28" fill="#E07A3E" font-weight="bold">¥3,286.50</text>
+  <text x="200" y="105" font-family="sans-serif" font-size="11" fill="#3A2E1F" opacity="0.5">笔数</text>
+  <text x="200" y="125" font-family="serif" font-size="20" fill="#3A2E1F" font-weight="bold">12</text>
+  <text x="280" y="105" font-family="sans-serif" font-size="11" fill="#3A2E1F" opacity="0.5">人均</text>
+  <text x="280" y="125" font-family="serif" font-size="20" fill="#3A2E1F" font-weight="bold">¥821</text>
+  <!-- Member avatars -->
+  <circle cx="40" cy="185" r="16" fill="#E07A3E"/>
+  <text x="40" y="190" font-family="sans-serif" font-size="14" fill="white" text-anchor="middle">张</text>
+  <circle cx="70" cy="185" r="16" fill="#3A6F5C"/>
+  <text x="70" y="190" font-family="sans-serif" font-size="14" fill="white" text-anchor="middle">李</text>
+  <circle cx="100" cy="185" r="16" fill="#C8442C"/>
+  <text x="100" y="190" font-family="sans-serif" font-size="14" fill="white" text-anchor="middle">王</text>
+  <circle cx="130" cy="185" r="16" fill="#4A3D2E"/>
+  <text x="130" y="190" font-family="sans-serif" font-size="14" fill="white" text-anchor="middle">赵</text>
+  <!-- Expense items -->
+  <rect x="20" y="220" width="350" height="70" rx="10" fill="#FBF6EC"/>
+  <circle cx="50" cy="255" r="18" fill="#E07A3E" opacity="0.15"/>
+  <text x="50" y="260" font-family="sans-serif" font-size="16" fill="#E07A3E" text-anchor="middle">餐</text>
+  <text x="80" y="245" font-family="serif" font-size="15" fill="#3A2E1F" font-weight="bold">海鲜大餐</text>
+  <text x="80" y="265" font-family="sans-serif" font-size="11" fill="#3A2E1F" opacity="0.5">张三付款 · 4人分摊 · 07.20</text>
+  <text x="350" y="255" font-family="serif" font-size="18" fill="#E07A3E" font-weight="bold" text-anchor="end">¥580</text>
+  <rect x="20" y="300" width="350" height="70" rx="10" fill="#FBF6EC"/>
+  <circle cx="50" cy="335" r="18" fill="#3A6F5C" opacity="0.15"/>
+  <text x="50" y="340" font-family="sans-serif" font-size="16" fill="#3A6F5C" text-anchor="middle">宿</text>
+  <text x="80" y="325" font-family="serif" font-size="15" fill="#3A2E1F" font-weight="bold">海景酒店</text>
+  <text x="80" y="345" font-family="sans-serif" font-size="11" fill="#3A2E1F" opacity="0.5">李四付款 · 4人分摊 · 07.20</text>
+  <text x="350" y="335" font-family="serif" font-size="18" fill="#E07A3E" font-weight="bold" text-anchor="end">¥1,200</text>
+  <rect x="20" y="380" width="350" height="70" rx="10" fill="#FBF6EC"/>
+  <circle cx="50" cy="415" r="18" fill="#C8442C" opacity="0.15"/>
+  <text x="50" y="420" font-family="sans-serif" font-size="16" fill="#C8442C" text-anchor="middle">票</text>
+  <text x="80" y="405" font-family="serif" font-size="15" fill="#3A2E1F" font-weight="bold">蜈支洲岛门票</text>
+  <text x="80" y="425" font-family="sans-serif" font-size="11" fill="#3A2E1F" opacity="0.5">王五付款 · 4人分摊 · 07.21</text>
+  <text x="350" y="415" font-family="serif" font-size="18" fill="#E07A3E" font-weight="bold" text-anchor="end">¥640</text>
+  <!-- Tab bar -->
+  <rect x="0" y="794" width="390" height="50" fill="#FBF6EC" opacity="0.95"/>
+  <text x="65" y="822" font-family="sans-serif" font-size="10" fill="#E07A3E" text-anchor="middle">账单</text>
+  <text x="130" y="822" font-family="sans-serif" font-size="10" fill="#3A2E1F" opacity="0.4" text-anchor="middle">行程</text>
+  <text x="195" y="822" font-family="sans-serif" font-size="10" fill="#3A2E1F" opacity="0.4" text-anchor="middle">行李</text>
+  <text x="260" y="822" font-family="sans-serif" font-size="10" fill="#3A2E1F" opacity="0.4" text-anchor="middle">信息</text>
+  <text x="325" y="822" font-family="sans-serif" font-size="10" fill="#3A2E1F" opacity="0.4" text-anchor="middle">投票</text>
+  <!-- FAB -->
+  <circle cx="340" cy="770" r="28" fill="#E07A3E"/>
+  <text x="340" y="778" font-family="sans-serif" font-size="28" fill="white" text-anchor="middle">+</text>
+</svg>

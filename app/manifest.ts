@@ -48,5 +48,37 @@ export default function manifest(): MetadataRoute.Manifest {
         purpose: 'any',
       },
     ],
-  };
+    screenshots: [
+      {
+        src: '/screenshot-home.svg',
+        sizes: '390x844',
+        type: 'image/svg+xml',
+        form_factor: 'narrow',
+        label: '账本列表首页',
+      },
+      {
+        src: '/screenshot-detail.svg',
+        sizes: '390x844',
+        type: 'image/svg+xml',
+        form_factor: 'narrow',
+        label: '账本详情与消费记录',
+      },
+    ],
+    shortcuts: [
+      {
+        name: '创建新账本',
+        short_name: '新建',
+        description: '创建一个新的旅游账本',
+        url: '/trip/new',
+        icons: [{ src: '/icon-192.png', sizes: '192x192' }],
+      },
+      {
+        name: '加入账本',
+        short_name: '加入',
+        description: '输入加入码加入已有账本',
+        url: '/trip/join',
+        icons: [{ src: '/icon-192.png', sizes: '192x192' }],
+      },
+    ],
+  } as unknown as MetadataRoute.Manifest;
 }
